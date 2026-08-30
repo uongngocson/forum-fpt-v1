@@ -107,7 +107,7 @@ async function bootstrap() {
         if (!shouldServeSpaFallback(request.url)) {
           return reply.status(404).send({ statusCode: 404, message: 'Not Found', path: request.url });
         }
-        return reply.sendFile('index.html');
+        return (reply as any).sendFile('index.html');
       });
     };
 
