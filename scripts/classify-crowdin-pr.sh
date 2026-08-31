@@ -41,6 +41,7 @@ allowed_paths=(
   "client/src/locales/sv.json"
   "client/src/locales/tr.json"
   "client/src/locales/uk.json"
+  "client/src/locales/vi.json"
   "client/src/locales/zh.json"
   "client/src/locales/zh-Hant.json"
 )

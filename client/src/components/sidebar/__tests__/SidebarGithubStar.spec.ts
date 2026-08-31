@@ -36,8 +36,8 @@ describe('SidebarGithubStar', () => {
 
     await wrapper.get('button[aria-label="Star on GitHub"]').trigger('click')
 
-    expect(document.body.textContent).toContain('Enjoying BookOrbit?')
-    expect(document.body.textContent).toContain('Star BookOrbit on GitHub')
+    expect(document.body.textContent).toContain('Enjoying Cáo Sách?')
+    expect(document.body.textContent).toContain('Star Cáo Sách on GitHub')
   })
 
   it('shows the GitHub star tooltip on focus', async () => {
