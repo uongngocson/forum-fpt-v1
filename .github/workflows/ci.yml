@@ -411,6 +411,7 @@ jobs:
         shell: bash
         env:
           PACKAGE: ${{ matrix.package }}
+          NODE_OPTIONS: "--max-old-space-size=8192"
         run: |
           if [[ "$PACKAGE" == "server" ]]; then
             pnpm --filter server type-check
