@@ -22,6 +22,7 @@ function extractSha(value: string): string | null {
 function normalizeVersionLabel(value: string): string {
   const normalized = value.trim()
   if (!normalized) return ''
+  if (normalized.toLowerCase() === 'local build') return 'CÁO SÁCH'
   const sha = extractSha(normalized)
   if (sha) return `sha-${sha.slice(0, 12)}`
   return normalized

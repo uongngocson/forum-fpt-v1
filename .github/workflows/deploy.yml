@@ -1,0 +1,67 @@
+name: Deploy Production
+
+run-name: >-
+  ${{ (github.event_name == 'workflow_run' && format('Deploy - {0} ({1})', github.event.workflow_run.head_commit.message, github.event.workflow_run.head_branch)) || format('Deploy - manual ({0})', github.ref_name) }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_image:
+        description: "Docker image tag to deploy (e.g. main, latest, or sha-xxxx)"
+        required: false
+        default: "main"
+  workflow_run:
+    workflows: ["Container Image"]
+    types: [completed]
+    branches: [main]
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy to Server (ftelbook.soninfra.cloud)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.conclusion == 'success')
+    steps:
+      - name: Connect to Tailscale
+        if: ${{ secrets.TAILSCALE_AUTHKEY != '' }}
+        uses: tailscale/github-action@v2
+        with:
+          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
+          tags: tag:ci
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SERVER_HOST || '100.101.27.107' }}
+          username: ${{ secrets.SERVER_USER || 'sonun' }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: ${{ secrets.SERVER_PORT || 22 }}
+          script_stop: true
+          script: |
+            echo "🚀 Starting deployment of BookOrbit on Production..."
+            cd /home/sonun/bookorbit
+
+            echo "📦 Pulling latest container image..."
+            docker compose pull app
+
+            echo "🔄 Recreating app container gracefully..."
+            docker compose up -d --no-deps --remove-orphans app
+
+            echo "🧹 Cleaning up dangling images..."
+            docker image prune -f
+
+            echo "✅ Checking container health..."
+            sleep 5
+            docker ps --filter name=bookorbit-app --format 'table {{.Names}}	{{.Status}}	{{.Ports}}'
+            echo "🎉 Deployment completed successfully!"

@@ -82,7 +82,7 @@ describe('locale store', () => {
     const store = useLocaleStore()
 
     await expect(store.setLocale('nl')).rejects.toThrow('chunk failed')
-    expect(store.locale).toBe('en')
+    expect(store.locale).toBe('vi')
     expect(storedValues.has('locale')).toBe(false)
 
     await store.setLocale('nl')

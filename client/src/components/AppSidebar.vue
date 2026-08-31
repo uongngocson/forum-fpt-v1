@@ -2,7 +2,7 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
-import { Aperture, BookCopy, CircleArrowUp, FolderOpen, Heart, Orbit } from '@lucide/vue'
+import { Aperture, BookCopy, CircleArrowUp, FolderOpen, Heart } from '@lucide/vue'
 import { formatCompactNumber, formatNumber } from '@/i18n/formatters'
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarRail, SidebarSeparator, useSidebar } from '@/components/ui/sidebar'
 import SidebarZone from '@/components/sidebar/SidebarZone.vue'
@@ -49,7 +49,7 @@ const { fetchSummary: fetchBookDockSummary, subscribe: subscribeBookDockSummary 
 const { fetchCounts: fetchBrowseCounts, refreshCounts: refreshBrowseCounts } = useBrowseCounts()
 useLibraryScanRefresh()
 
-const SUPPORT_URL = 'https://ko-fi.com/neonbookorbit'
+const SUPPORT_URL = 'https://github.com/uongngocson'
 
 // Shared scopes belong to their owner, so their display order is not this user's to
 // persist. Sending them anyway makes the server reject the whole reorder.

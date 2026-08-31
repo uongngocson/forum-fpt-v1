@@ -40,10 +40,10 @@ describe('buildSidebarVersionUi', () => {
     expect(ui.updateVersionLabel).toBe('')
   })
 
-  it('shows local build labels as-is', () => {
+  it('shows local build labels as CÁO SÁCH', () => {
     const ui = buildSidebarVersionUi('Local build', null, null)
 
-    expect(ui.currentLabel).toBe('Local build')
+    expect(ui.currentLabel).toBe('CÁO SÁCH')
     expect(ui.currentHref).toBeNull()
   })
 
@@ -75,7 +75,7 @@ describe('buildSidebarVersionUi', () => {
   it('does not enable the update release arrow for local builds', () => {
     const ui = buildSidebarVersionUi('Local build', true, 'v1.2.4')
 
-    expect(ui.currentLabel).toBe('Local build')
+    expect(ui.currentLabel).toBe('CÁO SÁCH')
     expect(ui.showUpdate).toBe(false)
   })
 

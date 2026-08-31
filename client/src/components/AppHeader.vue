@@ -70,7 +70,7 @@ const { hasUnseen: hasUnseenWhatsNew } = useWhatsNew()
 const themeStore = useThemeStore()
 const localeStore = useLocaleStore()
 const currentLanguageLabel = computed(() => LOCALE_LABELS[localeStore.locale])
-const documentationUrl = 'https://bookorbit.app/what-is-bookorbit'
+const documentationUrl = 'https://github.com/uongngocson'
 
 const iconRadiusClass = computed(() => (themeStore.radius === 'sharp' ? 'rounded-none' : 'rounded-full'))
 
