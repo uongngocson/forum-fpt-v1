@@ -338,7 +338,7 @@ describe('KoreaderSettings', () => {
     expect(wrapper.text()).toContain('14 books')
     expect(wrapper.text()).toContain('1 device')
     expect(wrapper.text()).toContain('KOReader sync URL')
-    expect(wrapper.text()).toContain("Works with the BookOrbit plugin and KOReader's built-in progress sync.")
+    expect(wrapper.text()).toContain("Works with the Cáo Sách plugin and KOReader's built-in progress sync.")
     expect((wrapper.find('#koreader-sync-url').element as HTMLInputElement).value).toBe('https://bookorbit.example/api/v1/koreader')
     expect(wrapper.text()).toContain('Kobo Libra 2')
     expect(wrapper.text()).toContain('Project Hail Mary')
@@ -581,7 +581,7 @@ describe('KoreaderSettings', () => {
     const bookResult = wrapper.findAll('button').find((button) => button.text().includes('BookOrbit Title'))!
     await bookResult.trigger('click')
     expect(wrapper.text()).toContain('Confirm KOReader link')
-    expect(wrapper.text()).toContain('Already synced stats will stay on their current BookOrbit book.')
+    expect(wrapper.text()).toContain('Already synced stats will stay on their current Cáo Sách book.')
 
     await buttonByText(wrapper, 'Confirm link')!.trigger('click')
     await flushPromises()
@@ -778,7 +778,7 @@ describe('KoreaderSettings', () => {
     await buttonByText(wrapper, 'Unlink')!.trigger('click')
 
     expect(wrapper.text()).toContain('Unlink KOReader book?')
-    expect(wrapper.text()).toContain('Already synced stats will stay on their current BookOrbit book.')
+    expect(wrapper.text()).toContain('Already synced stats will stay on their current Cáo Sách book.')
 
     const unlinkButtons = wrapper.findAll('button').filter((button) => button.text() === 'Unlink')
     await unlinkButtons[unlinkButtons.length - 1]!.trigger('click')
