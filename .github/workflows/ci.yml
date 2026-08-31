@@ -25,6 +25,7 @@ env:
   PNPM_VERSION: "11"
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  NODE_OPTIONS: "--max-old-space-size=8192"
 
 jobs:
   dependency-review:
