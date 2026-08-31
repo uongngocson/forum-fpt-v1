@@ -1,5 +1,5 @@
 import { nextTick, ref } from 'vue'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import type { RouteLocationMatched, RouteLocationNormalizedLoaded, Router } from 'vue-router'
 import { i18n, setI18nLocale } from '@/i18n'
 import { registerRouteTitleHook, resolveRouteTitle } from '@/router/title-resolver'
@@ -14,6 +14,10 @@ function routeWithMeta(title: string | ((route: RouteLocationNormalizedLoaded) =
 }
 
 describe('resolveRouteTitle', () => {
+  beforeEach(async () => {
+    await setI18nLocale('en')
+  })
+
   afterEach(async () => {
     await setI18nLocale('en')
   })
