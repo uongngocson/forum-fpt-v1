@@ -33,8 +33,8 @@ export default defineConfig({
         'maskable-icon-512x512.png',
       ],
       manifest: {
-        name: 'BookOrbit',
-        short_name: 'BookOrbit',
+        name: 'Cáo Sách',
+        short_name: 'Cáo Sách',
         description: 'Your personal book library and reading space',
         theme_color: '#1e1e18',
         background_color: '#fafaf8',
@@ -143,7 +143,8 @@ export default defineConfig({
     allowedHosts: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        target: 'http://127.0.0.1:3001',
+        changeOrigin: true,
         agent: apiAgent,
         configure: (proxy) => {
           proxy.on('proxyReq', (proxyReq, req) => {
@@ -155,7 +156,7 @@ export default defineConfig({
         },
       },
       '/socket.io': {
-        target: 'http://localhost:3000',
+        target: 'http://127.0.0.1:3001',
         ws: true,
         changeOrigin: true,
       },

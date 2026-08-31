@@ -213,7 +213,8 @@ async function handleSubmit() {
     <div v-if="accentOpen || radiusOpen || backgroundOpen" class="fixed inset-0 z-10" @click="closeAll()" />
 
     <div class="login-card relative z-10 w-full max-w-md rounded-2xl p-8">
-      <div class="mb-6">
+      <div class="mb-6 flex flex-col items-center text-center">
+        <img src="/pwa-64x64.png" alt="Cáo Sách" class="w-12 h-12 rounded-xl mb-2 object-contain shadow-sm" />
         <h1 class="text-xl font-semibold text-foreground">{{ t('auth.setup.title') }}</h1>
         <p class="text-sm text-muted-foreground mt-1">{{ t('auth.setup.subtitle') }}</p>
       </div>

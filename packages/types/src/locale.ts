@@ -22,6 +22,7 @@ export const SUPPORTED_LOCALES = [
   "sv",
   "tr",
   "uk",
+  "vi",
   "zh",
   "zh-Hant",
 ] as const;
@@ -54,6 +55,7 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   sv: "Svenska",
   tr: "Türkçe",
   uk: "Українська",
+  vi: "Tiếng Việt",
   zh: "简体中文",
   "zh-Hant": "繁體中文",
 };
@@ -82,6 +84,7 @@ export const LOCALE_DIRECTIONS: Record<Locale, "ltr" | "rtl"> = {
   sv: "ltr",
   tr: "ltr",
   uk: "ltr",
+  vi: "ltr",
   zh: "ltr",
   "zh-Hant": "ltr",
 };

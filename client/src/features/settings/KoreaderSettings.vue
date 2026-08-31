@@ -1698,7 +1698,7 @@ async function handleDownloadPlugin() {
                 </p>
               </div>
               <div class="min-w-0 rounded-md border border-border bg-background px-3 py-2">
-                <p class="text-xs font-medium text-muted-foreground">BookOrbit</p>
+                <p class="text-xs font-medium text-muted-foreground">Cáo Sách</p>
                 <p class="mt-1 text-sm font-medium text-foreground truncate">
                   {{ pendingLinkTarget.title ?? t('settings.reader.koreader.hashLinks.untitledBook') }}
                 </p>

@@ -184,13 +184,13 @@ onUnmounted(() => stopLibraryUploadListener())
         @click="handleNavigate"
       >
         <div
-          class="flex h-9 w-9 shrink-0 items-center justify-center rounded-(--shell-radius) bg-primary ring-1 ring-(--shell-accent-line)"
+          class="flex h-9 w-9 shrink-0 items-center justify-center rounded-(--shell-radius) bg-background overflow-hidden ring-1 ring-(--shell-accent-line)"
           aria-hidden="true"
         >
-          <Orbit :size="21" class="text-primary-foreground" />
+          <img src="/pwa-64x64.png" alt="Cáo Sách" class="h-7 w-7 object-contain" />
         </div>
         <span class="truncate font-serif text-[18px] font-semibold leading-none text-sidebar-foreground group-data-[collapsible=icon]:hidden">
-          Book<span class="text-primary"> Orbit</span>
+          Cáo<span class="text-primary"> Sách</span>
         </span>
       </RouterLink>
     </SidebarHeader>

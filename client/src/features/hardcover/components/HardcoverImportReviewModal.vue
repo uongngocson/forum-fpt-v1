@@ -416,7 +416,7 @@ function normalizeSearch(value: string): string {
               </div>
 
               <div class="min-w-0 text-xs">
-                <p class="font-medium text-muted-foreground">BookOrbit</p>
+                <p class="font-medium text-muted-foreground">Cáo Sách</p>
                 <p class="truncate">{{ localStatusLabel(row) }}</p>
                 <p class="truncate text-muted-foreground">{{ matchMethodLabel(row) }} / {{ confidenceLabel(row) }}</p>
               </div>

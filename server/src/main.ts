@@ -117,12 +117,12 @@ async function bootstrap() {
     });
   }
 
-  app.enableShutdownHooks();
   await app.listen(process.env.PORT ?? 3000, '0.0.0.0');
+  console.log(`🚀 Cáo Sách NestJS Server successfully listening on port ${process.env.PORT ?? 3000}`);
 }
 
 bootstrap().catch((err: unknown) => {
   const message = err instanceof Error ? (err.stack ?? err.message) : String(err);
-  process.stderr.write(`BookOrbit startup failed:\n${message}\n`);
+  process.stderr.write(`Cáo Sách startup failed:\n${message}\n`);
   process.exit(1);
 });

@@ -730,7 +730,7 @@
       "test": {
         "connected": "연결됨 - {issuer}",
         "connectionFailed": "연결 실패",
-        "privateIssuerAddress": "제공자 URL이 사설 또는 로컬 네트워크 주소로 판단되어 서버가 연결을 거부했습니다. 이를 허용하려면 BookOrbit 서버에서 OIDC_ALLOW_LOCAL_ISSUERS=true 환경 변수를 설정해 주세요.",
+        "privateIssuerAddress": "제공자 URL이 사설 또는 로컬 네트워크 주소로 판단되어 서버가 연결을 거부했습니다. 이를 허용하려면 Cáo Sách 서버에서 OIDC_ALLOW_LOCAL_ISSUERS=true 환경 변수를 설정해 주세요.",
         "hide": "숨기기",
         "details": "상세 정보",
         "supported": "지원됨",
@@ -970,7 +970,7 @@
         "targetUser": "타겟 사용자",
         "doNotImport": "이 사용자는 가져오지 않음",
         "noSourceUsersLoaded": "로드된 소스 사용자가 없습니다.",
-        "noActiveTargetUsers": "활성 타겟 사용자를 찾을 수 없습니다. 매핑을 수행하기 전에 BookOrbit 사용자를 생성하거나 다시 활성화하세요.",
+        "noActiveTargetUsers": "활성 타겟 사용자를 찾을 수 없습니다. 매핑을 수행하기 전에 Cáo Sách 사용자를 생성하거나 다시 활성화하세요.",
         "pathPrefixMappings": "경로 접두사 매핑",
         "addMapping": "매핑 추가",
         "pathMappingsHelp1": "경로 매핑은 파일 위치를 기준으로 도서를 매칭할 수 있도록 원본 파일 경로를 대상 경로로 변환합니다. 예를 들어, 기존 Booklore 라이브러리가",
@@ -1260,7 +1260,7 @@
         "confirmReset": "초기화 확인",
         "resetDialog": {
           "title": "모든 가중치를 기본값으로 초기화하시겠습니까?",
-          "description": "24개의 필드 전체가 BookOrbit이 기본으로 제공하는 가중치 값으로 돌아갑니다. 저장 또는 재계산 전까지는 저장되지 않습니다."
+          "description": "24개의 필드 전체가 Cáo Sách이 기본으로 제공하는 가중치 값으로 돌아갑니다. 저장 또는 재계산 전까지는 저장되지 않습니다."
         },
         "reset": "재설정",
         "recalculate": "재계산",
@@ -2325,11 +2325,11 @@
         "syncUrlCopyFailed": "동기화 URL 복사에 실패했습니다.",
         "syncPreferences": "동기화 설정",
         "twoWaySync": "양방향 진행도 동기화",
-        "twoWaySyncHint": "BookOrbit과 Kobo 간의 독서 진행도 동기화 기능은 정확한 위치 판단과 신뢰성 있는 페이지 복원을 위해 KEPUB 전송을 요구합니다.",
-        "syncHighlights": "BookOrbit의 하이라이트를 Kobo와 동기화",
-        "syncHighlightsHint": "BookOrbit 또는 KOReader에서 만든 하이라이트를 Kobo로 전송합니다. 이 기능이 꺼져 있어도 Kobo의 하이라이트는 BookOrbit으로 전송됩니다. 연결된 필기 데이터는 수정 및 삭제 내용을 양방향으로 동기화합니다. KEPUB 전송을 요구하며, Kobo 기기의 책은 BookOrbit에서 다운로드한 KEPUB이어야 합니다.",
+        "twoWaySyncHint": "Cáo Sách과 Kobo 간의 독서 진행도 동기화 기능은 정확한 위치 판단과 신뢰성 있는 페이지 복원을 위해 KEPUB 전송을 요구합니다.",
+        "syncHighlights": "Cáo Sách의 하이라이트를 Kobo와 동기화",
+        "syncHighlightsHint": "Cáo Sách 또는 KOReader에서 만든 하이라이트를 Kobo로 전송합니다. 이 기능이 꺼져 있어도 Kobo의 하이라이트는 Cáo Sách으로 전송됩니다. 연결된 필기 데이터는 수정 및 삭제 내용을 양방향으로 동기화합니다. KEPUB 전송을 요구하며, Kobo 기기의 책은 Cáo Sách에서 다운로드한 KEPUB이어야 합니다.",
         "storeSync": "Kobo 스토어 작품 포함",
-        "storeSyncHint": "Kobo 계정의 Kobo Plus 작품 및 구매 작품을 BookOrbit 라이브러리에 전송합니다. 이 기능이 꺼져 있으면 BookOrbit 도서만 기기로 전달됩니다. 또한, 스토어 작품이 Kobo에서 직접 다운로드되며 BookOrbit 라이브러리에 추가되지 않습니다.",
+        "storeSyncHint": "Kobo 계정의 Kobo Plus 작품 및 구매 작품을 Cáo Sách 라이브러리에 전송합니다. 이 기능이 꺼져 있으면 Cáo Sách 도서만 기기로 전달됩니다. 또한, 스토어 작품이 Kobo에서 직접 다운로드되며 Cáo Sách 라이브러리에 추가되지 않습니다.",
         "convertKepub": "KEPUB으로 변환",
         "convertKepubHint": "EPUB 파일을 KEPUB으로 변환하여 전송합니다. 진행도 동기화 또는 하이라이트 동기화 기능이 켜진 상태라면 이 기능은 강제로 활성화됩니다. 활성화 이후 Kobo 동기화 시 책들은 KEPUB 다운로드로 다시 제공됩니다. Kobo가 계속해서 기존 책을 열려고 시도하는 경우에는 기존 EPUB 사본을 삭제하세요.",
         "forceHyphenation": "강제 하이픈 처리",
@@ -2341,7 +2341,7 @@
         "markAsFinished": "독서 완료",
         "markAsFinishedHint": "책을 \"읽음\" 상태로 표시하기 위한 퍼센트 값",
         "kepubLimit": "KEPUB 변환 제한",
-        "kepubLimitHint": "이 용량 제한을 초과하는 도서는 일반 EPUB 형식으로 전송되므로, BookOrbit이 해당 책의 독서 위치를 Kobo로 동기화하지 않습니다.",
+        "kepubLimitHint": "이 용량 제한을 초과하는 도서는 일반 EPUB 형식으로 전송되므로, Cáo Sách이 해당 책의 독서 위치를 Kobo로 동기화하지 않습니다.",
         "changesMustBeSaved": "변경 사항은 저장해야 적용됩니다.",
         "saving": "저장 중...",
         "saveSyncSettings": "동기화 설정 저장",
@@ -2403,8 +2403,7 @@
           "readingPositionSynced": "독서 위치 동기화됨",
           "labelWithTitle": "{label}: {title}",
           "updateCount": "{count, plural, one {#개 업데이트} other {#개 업데이트}}",
-          "directionToKobo": "BookOrbit -> Kobo",
-          "directionToBookOrbit": "Kobo -> BookOrbit",
+          "directionToKobo": "Cáo Sách -> Kobo",
           "twoWaySyncEnabled": "양방향 동기화 활성화됨",
           "deviceProgressSaved": "기기 진행도 저장됨",
           "summary": {
@@ -2436,10 +2435,11 @@
           "filterFailures": "실패",
           "refresh": "새로고침",
           "loadingActivity": "Kobo 활동 로딩 중...",
-          "noActivityHint": "페어링된 Kobo가 BookOrbit에 연결된 후에 최근 동기화 활동이 표시됩니다.",
+          "noActivityHint": "페어링된 Kobo가 Cáo Sách에 연결된 후에 최근 동기화 활동이 표시됩니다.",
           "error": "오류",
           "loading": "로딩 중...",
-          "loadMore": "더 많은 활동 내역 불러오기"
+          "loadMore": "더 많은 활동 내역 불러오기",
+          "directionToBookOrbit": "Kobo -> Cáo Sách"
         },
         "howBooksSynced": {
           "title": "책 동기화 방법",
@@ -2448,7 +2448,7 @@
         "nextSteps": {
           "title": "다음 단계",
           "step1": "1. 상단의 동기화 URL을 이용하여 Kobo 기기를 동기화하세요.",
-          "step2": "2. BookOrbit에서 사이드바에서 아무 컬렉션이나 연 후, 편집 아이콘을 클릭하고 {syncToKobo}를 활성화하세요. 동기화가 활성화된 컬렉션의 책만 기기에 다운로드됩니다."
+          "step2": "2. Cáo Sách에서 사이드바에서 아무 컬렉션이나 연 후, 편집 아이콘을 클릭하고 {syncToKobo}를 활성화하세요. 동기화가 활성화된 컬렉션의 책만 기기에 다운로드됩니다."
         },
         "syncToKobo": "Kobo와 동기화",
         "tabs": {
@@ -2458,14 +2458,14 @@
       },
       "koreader": {
         "title": "KOReader 동기화",
-        "subtitle": "KOReader에서 BookOrbit 카탈로그를 둘러보고 진행 상황, 독서 활동, 하이라이트, 필기 변경 사항을 동기화하세요.",
+        "subtitle": "KOReader에서 Cáo Sách 카탈로그를 둘러보고 진행 상황, 독서 활동, 하이라이트, 필기 변경 사항을 동기화하세요.",
         "tabs": {
           "sync": "동기화 설정",
           "fileNaming": "파일명"
         },
         "fileNaming": {
           "accountTitle": "계정 기본 KOReader 패턴",
-          "accountDescription": "KOReader 계정용 BookOrbit 다운로드 플러그인에서 사용되는 기본 상대 폴더 및 파일 이름을 설정합니다. 기기별 규칙은 아래에서 재정의할 수 있습니다.",
+          "accountDescription": "KOReader 계정용 Cáo Sách 다운로드 플러그인에서 사용되는 기본 상대 폴더 및 파일 이름을 설정합니다. 기기별 규칙은 아래에서 재정의할 수 있습니다.",
           "defaultPattern": "기본 도서 경로 패턴",
           "accountHelp": "기기에 사용자 지정 규칙이 없는 경우에 사용될 기본 KOReader 다운로드 플러그인 패턴입니다.",
           "accountHint": "별도의 사용자 재정의가 없는 KOReader 기기에서 사용됩니다.",
@@ -2473,7 +2473,7 @@
           "saveAccount": "계정 기본값 저장",
           "deviceTitle": "KOReader 기기 재정의",
           "deviceDescription": "기본, 시리즈, 단편 등 모든 경우의 경로 조합을 사용자 정의할 수 있습니다. 만약 비어 있다면 계정 기본 KOReader 패턴 또는 기기 기본값을 상속받습니다.",
-          "noDevices": "BookOrbit과 동기화되면 기기들이 이곳에 표시됩니다.",
+          "noDevices": "Cáo Sách과 동기화되면 기기들이 이곳에 표시됩니다.",
           "customOrganization": "커스텀 정리 설정",
           "usingAccountDefault": "계정 기본값 사용 중",
           "deviceDefaultHelp": "이 기기의 기본값입니다. 향후 변경 사항을 자동으로 상속받으려면 계정 기본값과 동일하게 유지하세오.",
@@ -2509,10 +2509,10 @@
         "latestPlugin": "최신 플러그인: v{version}",
         "latestPluginUnavailable": "최신 플러그인 사용 불가",
         "notConfigured": "KOReader 동기화가 설정되지 않았습니다",
-        "notConfiguredHint": "동기화 인증 정보 하나를 생성한 다음, BookOrbit KOReader 플러그인을 통해 탐색, 다운로드, 진행도 확인, 독서 이벤트, 하이라이트, 삭제 등의 기능을 사용하세요.",
+        "notConfiguredHint": "동기화 인증 정보 하나를 생성한 다음, Cáo Sách KOReader 플러그인을 통해 탐색, 다운로드, 진행도 확인, 독서 이벤트, 하이라이트, 삭제 등의 기능을 사용하세요.",
         "createCredentials": "인증 정보 생성",
         "createFormTitle": "KOReader 동기화 인증 정보 생성",
-        "createFormHint": "이 인증 정보는 KOReader 기기를 BookOrbit에 인증합니다.",
+        "createFormHint": "이 인증 정보는 KOReader 기기를 Cáo Sách에 인증합니다.",
         "username": "사용자 이름",
         "usernamePlaceholder": "예시: myreader",
         "password": "비밀번호",
@@ -2520,7 +2520,7 @@
         "changeCredentials": {
           "action": "인증 정보 변경",
           "title": "KOReader 인증 정보 변경",
-          "description": "모든 BookOrbit 계정에는 하나의 KOReader 인증 정보만 존재합니다. 여기서 동기화 데이터를 삭제 없이 인증 정보를 변경하세요.",
+          "description": "모든 Cáo Sách 계정에는 하나의 KOReader 인증 정보만 존재합니다. 여기서 동기화 데이터를 삭제 없이 인증 정보를 변경하세요.",
           "newPassword": "새 비밀번호",
           "usernameInvalid": "사용자 이름은 3자에서 100자 사이여야 합니다.",
           "passwordPlaceholder": "기존 비밀번호를 유지하려면 이 칸을 비워두세요",
@@ -2541,7 +2541,7 @@
         "status": "KOReader 상태",
         "refresh": "새로고침",
         "progressSync": "진행도 동기화",
-        "progressSyncHint": "KOReader 기기가 진행도, 독서 활동, 하이라이트, 필기 삭제 등을 BookOrbit과 동기화하도록 허용합니다.",
+        "progressSyncHint": "KOReader 기기가 진행도, 독서 활동, 하이라이트, 필기 삭제 등을 Cáo Sách과 동기화하도록 허용합니다.",
         "lastSync": "최종 동기화 일시",
         "syncedBooks": "동기화된 도서",
         "bookCount": "{count, plural, =0 {없음} one {#권} other {#권}}",
@@ -2551,17 +2551,17 @@
         "setup": "설정",
         "pluginServerUrl": "플러그인 서버 URL",
         "syncUrl": "KOReader 동기화 URL",
-        "syncUrlHint": "BookOrbit 플러그인 및 KOReader 기본 진행도 동기화 기능에 사용됩니다.",
+        "syncUrlHint": "Cáo Sách 플러그인 및 KOReader 기본 진행도 동기화 기능에 사용됩니다.",
         "copied": "복사 완료",
         "copyUrl": "URL 복사",
-        "preconfiguredPlugin": "사전 구성된 BookOrbit 플러그인",
+        "preconfiguredPlugin": "사전 구성된 Cáo Sách 플러그인",
         "preconfiguredPluginHintPrefix": "서버 URL과 동기화 로그인 정보가 이미 설정된 zip 파일을 다운로드하세요. 이 플러그인은 카탈로그 탐색 기능과 동기화 기능을 포함합니다. 폴더를",
         "preconfiguredPluginHintSuffix": "에 복사하고 KOReader를 재시작하세요.",
-        "latestPluginNote": "{label}. 기기 업데이트는 KOReader의 BookOrbit 메뉴에서 실행할 수 있습니다.",
+        "latestPluginNote": "{label}. 기기 업데이트는 KOReader의 Cáo Sách 메뉴에서 실행할 수 있습니다.",
         "preparing": "준비 중...",
         "downloadPlugin": "플러그인 다운로드",
         "noDevicesSynced": "아직 동기화된 기기가 없습니다.",
-        "noDevicesSyncedHint": "전체 동기화를 위해서는 BookOrbit 플러그인을 설치하고, 진행도만 업데이트하려면 KOReader의 기본 진행도 동기화 기능을 설정하세요.",
+        "noDevicesSyncedHint": "전체 동기화를 위해서는 Cáo Sách 플러그인을 설치하고, 진행도만 업데이트하려면 KOReader의 기본 진행도 동기화 기능을 설정하세요.",
         "lastSyncLabel": "마지막 동기화:",
         "lastBookLabel": "마지막으로 본 책:",
         "noneYet": "아직 없음",
@@ -2578,8 +2578,8 @@
         "failedPositions": "{count, plural, =0 {하이라이트 위치에 주의할 부분이 없습니다.} one {# 개의 하이라이트 위치에 주의가 필요합니다.} other {# 개의 하이라이트 위치에 주의가 필요합니다.}}",
         "setupGuide": "설치 가이드",
         "setupSteps": "KOReader 설정 단계",
-        "setupStepsHint": "카탈로그 탐색, 다운로드, 진행도, 독서 이벤트, 하이라이트 기능을 사용하려면 BookOrbit 플러그인을 사용하세요. 진행도 추적 기능만 사용하려면 기본 탑재 플러그인을 사용하세요.",
-        "pluginGuideTitle": "BookOrbit 플러그인",
+        "setupStepsHint": "카탈로그 탐색, 다운로드, 진행도, 독서 이벤트, 하이라이트 기능을 사용하려면 Cáo Sách 플러그인을 사용하세요. 진행도 추적 기능만 사용하려면 기본 탑재 플러그인을 사용하세요.",
+        "pluginGuideTitle": "Cáo Sách 플러그인",
         "pluginStep1": "상단의 사전 설정된 플러그인을 다운로드하세요.",
         "pluginStep2Prefix": "압축을 해제하고",
         "pluginStep2Middle": "을(를) 기기의",
@@ -2593,7 +2593,7 @@
         "stockStep2": "커스텀 동기화 서버를 상단에 표시된 URL로 설정하세요.",
         "stockStep2InlineUrl": "커스텀 동기화 서버를 다음 URL로 설정하세요:",
         "stockStep3": "생성했던 사용자 이름과 비밀번호를 입력하신 후, 로그인을 누르세요.",
-        "locationNote": "BookOrbit은 웹 리더에서 KOReader 호환 EPUB 독서 위치를 저장합니다. 정확한 줄 배치는 리더와 EPUB 레이아웃에 따라 달라질 수 있지만, 대부분의 경우 비슷한 위치로 복구됩니다.",
+        "locationNote": "Cáo Sách은 웹 리더에서 KOReader 호환 EPUB 독서 위치를 저장합니다. 정확한 줄 배치는 리더와 EPUB 레이아웃에 따라 달라질 수 있지만, 대부분의 경우 비슷한 위치로 복구됩니다.",
         "dangerZone": "위험 구역",
         "deleteCredentials": "KOReader 인증 정보 삭제",
         "deleteCredentialsHint": "동기화 인증 정보를 제거하고 모든 기기와의 연결을 해제합니다. 독서 진행도는 보존됩니다.",
@@ -2634,7 +2634,7 @@
           "unknownFile": "알 수 없는 KOReader 파일 {hash}",
           "unknownAuthor": "알 수 없는 저자",
           "noTitleOrAuthor": "제목이나 저자가 보고되지 않음",
-          "bookNumber": "BookOrbit 책 #{id}",
+          "bookNumber": "Cáo Sách 책 #{id}",
           "toast": {
             "unmatchedRefreshed": "매칭되지 않은 책이 새로고침되었습니다.",
             "unmatchedRefreshFailed": "매칭되지 않은 책 새로고침에 실패했습니다/",
@@ -2653,8 +2653,8 @@
           "modal": {
             "linkTitle": "KOReader 책 연결",
             "changeTitle": "KOReader 연결 변경",
-            "bookOrbitBook": "BookOrbit 책",
-            "searchPlaceholder": "BookOrbit 라이브러리 검색",
+            "bookOrbitBook": "Cáo Sách 책",
+            "searchPlaceholder": "Cáo Sách 라이브러리 검색",
             "minChars": "최소 2자 이상 입력하세요.",
             "searching": "검색 중...",
             "noBooksFound": "검색된 책이 없습니다.",
@@ -2664,14 +2664,14 @@
             "loadMore": "더보기",
             "confirmTitle": "KOReader 연결 확인",
             "koreader": "KOReader",
-            "bookOrbit": "BookOrbit",
+            "bookOrbit": "Cáo Sách",
             "bookId": "책 ID: {id}",
-            "syncedStatsNote": "이미 동기화된 통계는 해당 BookOrbit 도서에 유지됩니다.",
+            "syncedStatsNote": "이미 동기화된 통계는 해당 Cáo Sách 도서에 유지됩니다.",
             "chooseDifferent": "다른 것을 선택하세요",
             "saving": "저장 중...",
             "confirmLink": "연결 확인",
             "unlinkTitle": "KOReader 책 연결을 해제하시겠습니까?",
-            "unlinkBody": "이 해시가 향후 다시 연결될 때까지 {title}(으)로 동기화되지 않습니다. 이미 동기화된 통계는 BookOrbit 도서에 유지됩니다.",
+            "unlinkBody": "이 해시가 향후 다시 연결될 때까지 {title}(으)로 동기화되지 않습니다. 이미 동기화된 통계는 Cáo Sách 도서에 유지됩니다.",
             "unlinking": "연결 해제 중..."
           },
           "dismiss": "제거",
@@ -2679,15 +2679,15 @@
           "dismissing": "제거 중...",
           "unlinking": "연결 해제 중...",
           "unlinkConfirmTitle": "KOReader 책 연결을 해제하시겠습니까?",
-          "unlinkConfirmBody": "이 해시가 향후 다시 연결될 때까지 {title}(으)로 동기화되지 않습니다. 이미 동기화된 통계는 BookOrbit 도서에 유지됩니다.",
+          "unlinkConfirmBody": "이 해시가 향후 다시 연결될 때까지 {title}(으)로 동기화되지 않습니다. 이미 동기화된 통계는 Cáo Sách 도서에 유지됩니다.",
           "dismissConfirmTitle": "{title}을(를) 제거하시겠습니까?",
           "dismissConfirmBody": "이 작업은 해당 항목을 사용자의 매칭되지 않은 책 목록에서 제거합니다. 만약 다른 기기에서 이 해시가 다시 보고되면, 새로운 항목으로 다시 표시됩니다.",
           "dismissAllConfirmTitle": "{count, plural, =0 {매칭되지 않은 책 없음} one {매칭되지 않은 책 #권을 모두 제거하시겠습니까?} other {매칭되지 않은 책 #권을 모두 제거하시겠습니까?}}",
           "dismissAllConfirmBody": "이 기능은 현재 페이지뿐만 아니라 모든 '매칭되지 않은 책 목록'을 초기화합니다. 만약 다른 기기에서 이 해시 값들 중 하나가 다시 보고되면, 새로운 항목으로 다시 표시됩니다.",
           "changeLinkTitle": "KOReader 연결 변경",
           "linkBookTitle": "KOReader 책 연결",
-          "bookOrbitBook": "BookOrbit 책",
-          "searchLibraryPlaceholder": "BookOrbit 라이브러리 검색",
+          "bookOrbitBook": "Cáo Sách 책",
+          "searchLibraryPlaceholder": "Cáo Sách 라이브러리 검색",
           "enterMinChars": "최소 2자 이상 입력하세요.",
           "searching": "검색 중...",
           "noBooksFound": "검색된 책이 없습니다.",
@@ -2698,7 +2698,7 @@
           "loadingMore": "로딩 중...",
           "confirmLinkTitle": "KOReader 연결 확인",
           "bookId": "책 ID: {id}",
-          "syncedStatsNote": "이미 동기화된 통계는 해당 BookOrbit 도서에 유지됩니다.",
+          "syncedStatsNote": "이미 동기화된 통계는 해당 Cáo Sách 도서에 유지됩니다.",
           "chooseDifferent": "다른 것을 선택하세요",
           "saving": "저장 중...",
           "confirmLink": "링크 확인"
@@ -2820,7 +2820,7 @@
         "readerAudio": "재생 속도, 건너뛰기 간격, 수면 타이머 설정.",
         "readerFonts": "독서 시 사용 가능한 폰트 설정.",
         "readerGeneral": "모든 읽기 모드가 공유하는 기본값.",
-        "notifications": "BookOrbit 알림 및 알림 발생 위치 확인.",
+        "notifications": "Cáo Sách 알림 및 알림 발생 위치 확인.",
         "privacy": "독서 인사이트, 공유 링크, 활동 표시 여부 설정.",
         "restrictions": "내 계정의 연령 등급 및 숨김 콘텐츠 설정.",
         "libraries": "스캔 경로, 감시 폴더, 및 수집 규칙 설정.",
@@ -5276,9 +5276,9 @@
       "changePassword": "비밀번호 변경",
       "signOut": "로그아웃",
       "githubStar": {
-        "title": "BookOrbit 이용에 만족하시나요?",
-        "body": "BookOrbit이 라이브러리 관리에 도움이 되었다면, GitHub에서 이 프로젝트에 '스타'를 부탁드립니다. 이는 더 많은 사람이 앱을 발견하도록 돕고 지속적인 개발을 지원하는 데 도움이 됩니다.",
-        "cta": "GitHub에서 BookOrbit에 스타 주기"
+        "title": "Cáo Sách 이용에 만족하시나요?",
+        "body": "Cáo Sách이 라이브러리 관리에 도움이 되었다면, GitHub에서 이 프로젝트에 '스타'를 부탁드립니다. 이는 더 많은 사람이 앱을 발견하도록 돕고 지속적인 개발을 지원하는 데 도움이 됩니다.",
+        "cta": "GitHub에서 Cáo Sách에 스타 주기"
       },
       "surfaceOpacity": "표면 불투명도",
       "surfaceOpacityValue": "{value}%",
@@ -5299,8 +5299,8 @@
       "newCollection": "신규 컬렉션",
       "noCollections": "아직 컬렉션이 없습니다",
       "newReleaseNotes": "새 릴리스 노트가 공개되었습니다",
-      "support": "BookOrbit 지원",
-      "supportAria": "BookOrbit을 Ko-fi에서 후원해 주세요",
+      "support": "Cáo Sách 지원",
+      "supportAria": "Cáo Sách을 Ko-fi에서 후원해 주세요",
       "sectionHeader": {
         "add": "추가",
         "showAll": "모두 표시",
@@ -5505,7 +5505,7 @@
     },
     "libraryLoad": {
       "errorTitle": "라이브러리를 로드할 수 없습니다",
-      "errorDescription": "BookOrbit에서 사용자님의 라이브러리를 불러오는데 실패했습니다. 라이브러리 데이터는 삭제되지 않았습니다."
+      "errorDescription": "Cáo Sách에서 사용자님의 라이브러리를 불러오는데 실패했습니다. 라이브러리 데이터는 삭제되지 않았습니다."
     },
     "scroller": {
       "failedToLoad": "로드에 실패했습니다.",
@@ -5916,7 +5916,7 @@
       },
       "syncOnProgress": {
         "title": "진행도 변경 시 동기화",
-        "description": "BookOrbit 또는 KOReader의 진행도가 변경되었을 때 독서 진행도과 일시를 전송합니다."
+        "description": "Cáo Sách 또는 KOReader의 진행도가 변경되었을 때 독서 진행도과 일시를 전송합니다."
       },
       "syncOnRating": {
         "title": "평점 변경 시 동기화",
@@ -5970,7 +5970,7 @@
     },
     "import": {
       "title": "독서 상태 가져오기",
-      "description": "BookOrbit 책에 상태를 적용하기 전에 Hardcover와의 매칭을 미리 확인하세요.",
+      "description": "Cáo Sách 책에 상태를 적용하기 전에 Hardcover와의 매칭을 미리 확인하세요.",
       "clear": "초기화",
       "preview": "미리보기",
       "importProgress": "가져오기 진행",
@@ -6484,7 +6484,7 @@
       },
       "cwa": {
         "snapshotTitle": "스냅샷 모드가 중지되었습니다",
-        "stoppedWarning": "두 데이터베이스를 복사하기 전에 Calibre-Web Automated를 종료하세요. BookOrbit이 두 스냅샷이 정확히 같은 시점에 복사되었는지 보장할 수 없습니다.",
+        "stoppedWarning": "두 데이터베이스를 복사하기 전에 Calibre-Web Automated를 종료하세요. Cáo Sách이 두 스냅샷이 정확히 같은 시점에 복사되었는지 보장할 수 없습니다.",
         "importRootGuidance": "두 스냅샷 파일은 모두 설정된 MIGRATION_IMPORT_ROOT 디렉토리 아래에 위치한 읽기 가능한 서버 경로여야 합니다.",
         "logicalRootGuidance": "도서 경로 매핑은 이 데이터베이스 스냅샷들을 포함하는 호스트 폴더가 아니라, app.db에 저장된 논리적 Calibre 라이브러리 루트를 사용합니다.",
         "compatibilityNote": "스키마 동작은 Calibre-Web Automated v4.0.6을 기준으로 검증되었습니다. 해당 제품의 데이터베이스는 신뢰할 수 있는 애플리케이션 릴리스 버전을 제공하지 않습니다."
@@ -6516,7 +6516,7 @@
       "targetUser": "타겟 사용자",
       "doNotImport": "이 사용자는 가져오지 않음",
       "noSourceUsersLoaded": "로드된 소스 사용자가 없습니다.",
-      "noActiveTargetUsers": "활성 타겟 사용자를 찾을 수 없습니다. 매핑을 수행하기 전에 BookOrbit 사용자를 생성하거나 다시 활성화하세요.",
+      "noActiveTargetUsers": "활성 타겟 사용자를 찾을 수 없습니다. 매핑을 수행하기 전에 Cáo Sách 사용자를 생성하거나 다시 활성화하세요.",
       "pathPrefixMappings": "경로 접두사 매핑",
       "addMapping": "매핑 추가",
       "pathMappingsExplanation": "경로 매핑은 파일 위치를 기준으로 도서를 매칭할 수 있도록 원본 파일 경로를 대상 경로로 변환합니다. 도서는 경로 매핑과 관계없이 ISBN, 파일 해시, 제목/저자를 통해서도 매칭됩니다.",

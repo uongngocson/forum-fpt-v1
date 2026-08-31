@@ -242,8 +242,9 @@ async function handleOidcLogin(provider: OidcProviderPublic) {
     <div v-if="accentOpen || radiusOpen || backgroundOpen" class="fixed inset-0 z-10" @click="closeAll()" />
 
     <div class="login-card relative z-10 w-full max-w-sm rounded-2xl p-8">
-      <div class="text-center mb-8 animate-fade-up">
-        <h1 class="text-2xl font-serif font-semibold text-foreground">Book<span class="text-primary"> Orbit</span></h1>
+      <div class="text-center mb-8 animate-fade-up flex flex-col items-center">
+        <img src="/pwa-64x64.png" alt="Cáo Sách" class="w-12 h-12 rounded-xl mb-2 object-contain shadow-sm" />
+        <h1 class="text-2xl font-serif font-semibold text-foreground">Cáo<span class="text-primary"> Sách</span></h1>
         <p class="text-sm text-muted-foreground mt-1">{{ t('auth.login.subtitle') }}</p>
       </div>
 
