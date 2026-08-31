@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import { DEFAULT_LOCALE, SUPPORTED_LOCALES, isSupportedLocale, type Locale } from '@bookorbit/types'
+import { SUPPORTED_LOCALES, isSupportedLocale, type Locale } from '@bookorbit/types'
 import { storage } from '@/services/storage'
 import { activateI18nLocale, loadLocaleMessages } from '@/i18n'
 

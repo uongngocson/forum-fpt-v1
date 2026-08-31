@@ -1,6 +1,6 @@
 import type { WritableComputedRef } from 'vue'
 import { createI18n } from 'vue-i18n'
-import { DEFAULT_LOCALE, LOCALE_DIRECTIONS, type Locale } from '@bookorbit/types'
+import { LOCALE_DIRECTIONS, type Locale } from '@bookorbit/types'
 import en from '@/locales/en.json'
 import { compileIcuCatalog } from './icu'
 
