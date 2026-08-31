@@ -40,7 +40,7 @@ describe('LanguagePicker', () => {
     // Ordering by code would put Suomi between Español and Français, and Bahasa
     // Indonesia between Magyar and Italiano, which reads as unsorted to a user.
     expect(labels.slice(0, 6)).toEqual(['Bahasa Indonesia', 'Čeština', 'Dansk', 'Deutsch', 'English', 'Español'])
-    expect(labels).toHaveLength(25)
+    expect(labels).toHaveLength(26)
   })
 
   it('pairs each native name with its English name', () => {
