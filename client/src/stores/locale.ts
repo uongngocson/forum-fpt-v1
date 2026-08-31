@@ -49,7 +49,7 @@ export function detectInitialLocale(): Locale {
   const stored = storage.get<string>(STORAGE_KEY, '')
   if (isSupportedLocale(stored)) return stored
 
-  return DEFAULT_LOCALE
+  return 'vi'
 }
 
 export const useLocaleStore = defineStore('locale', () => {
