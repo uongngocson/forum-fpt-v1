@@ -20,7 +20,7 @@ export class AppInfoService implements OnApplicationBootstrap {
   ) {}
 
   async onApplicationBootstrap(): Promise<void> {
-    const version = this.config.get<string>('app.version') ?? 'CÁO SÁCH';
+    const version = this.config.get<string>('app.version') ?? 'Local build';
     const enabled = await this.appSettingsService.isUpdateCheckEnabled();
 
     if (!enabled || !SEMVER_RE.test(version)) {
@@ -32,7 +32,7 @@ export class AppInfoService implements OnApplicationBootstrap {
   }
 
   async getAppInfo(): Promise<AppInfoResponse> {
-    const version = this.config.get<string>('app.version') ?? 'CÁO SÁCH';
+    const version = this.config.get<string>('app.version') ?? 'Local build';
     const enabled = await this.appSettingsService.isUpdateCheckEnabled();
     if (enabled && SEMVER_RE.test(version)) {
       const now = Date.now();
