@@ -143,7 +143,8 @@ function runChild(command, runTimeoutMs) {
     const child = spawn(command[0], command.slice(1), {
       cwd: process.cwd(),
       stdio: "inherit",
-      detached: true,
+      shell: process.platform === "win32",
+      detached: process.platform !== "win32",
       env: {
         ...process.env,
         // The lock holder owns the machine, so it may use the wider pool. Unlocked runs fall

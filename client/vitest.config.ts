@@ -21,7 +21,7 @@ export default mergeConfig(
       // undefined unless the process was started with `--localstorage-file`, and its
       // `sessionStorage` is a process-wide store no test file can reset. Standing Node's
       // implementation down leaves jsdom's in place, isolated per test file.
-      execArgv: ['--no-experimental-webstorage'],
+      execArgv: ['--no-experimental-webstorage', '--max-old-space-size=4096'],
       exclude: [...configDefaults.exclude, 'e2e/**'],
       root: fileURLToPath(new URL('./', import.meta.url)),
       coverage: {
