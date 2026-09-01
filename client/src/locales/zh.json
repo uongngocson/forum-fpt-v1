@@ -7264,6 +7264,46 @@
     "previousImage": "上一张图片",
     "nextImage": "下一张图片"
   },
+  "onboarding": {
+    "progressText": "{current} of {total}",
+    "next": "Next",
+    "back": "Back",
+    "done": "Done",
+    "steps": {
+      "libraries": {
+        "title": "Your libraries live here",
+        "description": "Libraries appear here once created. Use the + button to add your first one, then click any library to browse its books."
+      },
+      "smartScopes": {
+        "title": "Smart Scopes - Smart filters",
+        "description": "Smart Scopes are saved filter rules that always stay up to date. Define criteria once - like \"unread sci-fi\" - and browse that slice of your library instantly."
+      },
+      "collections": {
+        "title": "Collections - curated lists",
+        "description": "Collections are manual lists you build yourself - great for reading orders, recommendations, or syncing a specific set of books to your Kobo."
+      },
+      "globalSearch": {
+        "title": "Search your collection",
+        "description": "Use the search bar to instantly find any book, author, or series across your library."
+      },
+      "bookDock": {
+        "title": "Book Dock",
+        "description": "Uploaded files wait here. Review metadata, set the target library, then finalize to add them to your collection."
+      },
+      "statistics": {
+        "title": "Reading statistics",
+        "description": "Explore 33+ charts covering your reading pace, genre breakdown, session patterns, top authors, and more. Your full reading history at a glance."
+      },
+      "upload": {
+        "title": "Upload books",
+        "description": "Upload books directly from your browser. They land in the Book Dock for metadata review before being added to a library."
+      },
+      "appearance": {
+        "title": "Make it yours",
+        "description": "Customize your theme, accent color, and background from the appearance menu."
+      }
+    }
+  },
   "titles": {
     "dashboard": "控制面板",
     "libraries": "库",

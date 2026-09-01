@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { AlertTriangle, Loader2, RefreshCw, Settings2, Sparkles } from '@lucide/vue'
+import { AlertTriangle, Loader2, MessageSquare, RefreshCw, Settings2, Sparkles } from '@lucide/vue'
 
 import { useAuth } from '@/features/auth/composables/useAuth'
 import { getDashboardGreetingLabel } from '@/features/dashboard/lib/greeting'
@@ -67,6 +67,10 @@ function handleOpenSettings() {
   settingsOpen.value = true
 }
 
+function handleOpenForum() {
+  window.open('https://forum.soninfra.cloud/', '_blank', 'noopener,noreferrer')
+}
+
 function handleDashboardSettingsSaved() {
   dashboardRevision.value += 1
 }
@@ -127,16 +131,27 @@ onUnmounted(() => {
                 <span class="ml-1 font-semibold text-primary">{{ greetingName }}</span>
               </p>
             </div>
-            <!-- Icon-only below sm so the greeting keeps its width; the label stays available to assistive tech. -->
-            <button
-              type="button"
-              :aria-label="t('views.dashboard.customize')"
-              class="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-primary/40 bg-card/40 px-2 py-1.5 text-sm font-medium text-foreground shadow-sm transition-colors hover:border-primary/70 hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:px-2.5"
-              @click="handleOpenSettings"
-            >
-              <Settings2 :size="15" aria-hidden="true" />
-              <span class="hidden sm:inline">{{ t('views.dashboard.customize') }}</span>
-            </button>
+            <div class="flex shrink-0 items-center gap-2">
+              <button
+                type="button"
+                :aria-label="t('views.dashboard.bookExchangeForum')"
+                class="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-primary/40 bg-card/40 px-2 py-1.5 text-sm font-medium text-foreground shadow-sm transition-colors hover:border-primary/70 hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:px-2.5"
+                @click="handleOpenForum"
+              >
+                <MessageSquare :size="15" aria-hidden="true" />
+                <span class="hidden sm:inline">{{ t('views.dashboard.bookExchangeForum') }}</span>
+              </button>
+              <!-- Icon-only below sm so the greeting keeps its width; the label stays available to assistive tech. -->
+              <button
+                type="button"
+                :aria-label="t('views.dashboard.customize')"
+                class="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-primary/40 bg-card/40 px-2 py-1.5 text-sm font-medium text-foreground shadow-sm transition-colors hover:border-primary/70 hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:px-2.5"
+                @click="handleOpenSettings"
+              >
+                <Settings2 :size="15" aria-hidden="true" />
+                <span class="hidden sm:inline">{{ t('views.dashboard.customize') }}</span>
+              </button>
+            </div>
           </div>
 
           <DashboardWidgetRow :key="`widgets-${dashboardRevision}`" class="animate-fade-up" />

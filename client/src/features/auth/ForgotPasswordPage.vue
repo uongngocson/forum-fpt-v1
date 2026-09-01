@@ -245,6 +245,18 @@ async function handleSubmit() {
 <style scoped>
 .login-bg {
   position: relative;
+  background-image: url('/bg-forum-fpt-v1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: color-mix(in oklch, var(--background) 25%, transparent);
+  pointer-events: none;
 }
 
 .theme-btn {

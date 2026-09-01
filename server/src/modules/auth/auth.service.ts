@@ -19,7 +19,7 @@ import { and, count, eq, gt, isNull, sql } from 'drizzle-orm';
 import { NodePgDatabase } from 'drizzle-orm/node-postgres';
 import type { FastifyReply, FastifyRequest } from 'fastify';
 
-import { AuditAction, LoginErrorCode } from '@bookorbit/types';
+import { AuditAction, LoginErrorCode, Permission } from '@bookorbit/types';
 
 import { APP_SETTING_KEYS } from '../../common/constants/app-settings.constants';
 import { DB } from '../../db/db.module';
@@ -147,6 +147,11 @@ export class AuthService {
           .values(defaultLibraryIds.map((libraryId) => ({ userId: user.id, libraryId, accessLevel: 'viewer' as const })))
           .onConflictDoNothing();
       }
+
+      await tx.insert(schema.userPermissions).values([
+        { userId: user.id, permissionName: Permission.LibraryUpload },
+        { userId: user.id, permissionName: Permission.LibraryDownload },
+      ]);
 
       this.logger.log(`[auth.register] [end] userId=${user.id} username="${sanitizeLogValue(user.username)}" - registration completed`);
 

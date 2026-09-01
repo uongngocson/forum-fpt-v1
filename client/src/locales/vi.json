@@ -8474,6 +8474,7 @@
     },
     "dashboard": {
       "customize": "Tùy chỉnh bảng điều khiển",
+      "bookExchangeForum": "Diễn đàn trao đổi sách",
       "allShelvesHidden": "Tất cả các kệ sách đang bị ẩn.",
       "greeting": {
         "night": "Chúc ngủ ngon,",
@@ -8628,6 +8629,46 @@
     "closeImage": "Đóng ảnh",
     "previousImage": "Ảnh trước",
     "nextImage": "Ảnh tiếp theo"
+  },
+  "onboarding": {
+    "progressText": "{current} / {total}",
+    "next": "Tiếp theo",
+    "back": "Quay lại",
+    "done": "Hoàn tất",
+    "steps": {
+      "libraries": {
+        "title": "Nơi lưu trữ các thư viện",
+        "description": "Các thư viện sẽ xuất hiện ở đây sau khi được tạo. Sử dụng nút + để thêm thư viện đầu tiên, sau đó nhấp vào thư viện bất kỳ để duyệt sách."
+      },
+      "smartScopes": {
+        "title": "Smart Scopes - Bộ lọc thông minh",
+        "description": "Smart Scopes là các quy tắc lọc được lưu lại và luôn tự động cập nhật. Chỉ cần thiết lập điều kiện một lần - ví dụ như \"sách viễn tưởng chưa đọc\" - và duyệt nhanh danh mục đó."
+      },
+      "collections": {
+        "title": "Bộ sưu tập - Danh sách tuyển chọn",
+        "description": "Bộ sưu tập là danh sách do chính bạn tạo thủ công - rất phù hợp để sắp xếp thứ tự đọc, tạo danh sách gợi ý hoặc đồng bộ một nhóm sách nhất định vào máy đọc sách Kobo."
+      },
+      "globalSearch": {
+        "title": "Tìm kiếm trong bộ sưu tập",
+        "description": "Sử dụng thanh tìm kiếm để tìm nhanh bất kỳ cuốn sách, tác giả hoặc bộ truyện nào trong toàn bộ thư viện của bạn."
+      },
+      "bookDock": {
+        "title": "Book Dock",
+        "description": "Các tệp tải lên sẽ chờ ở đây. Bạn có thể kiểm tra siêu dữ liệu, chọn thư viện đích rồi hoàn tất để thêm vào bộ sưu tập của mình."
+      },
+      "statistics": {
+        "title": "Thống kê đọc sách",
+        "description": "Khám phá hơn 33 biểu đồ chi tiết về tốc độ đọc, phân bổ thể loại, thói quen đọc, tác giả hàng đầu và nhiều hơn nữa. Toàn bộ lịch sử đọc sách trong tầm tay."
+      },
+      "upload": {
+        "title": "Tải sách lên",
+        "description": "Tải sách trực tiếp từ trình duyệt của bạn. Sách sẽ được đưa vào Book Dock để kiểm tra siêu dữ liệu trước khi thêm vào thư viện."
+      },
+      "appearance": {
+        "title": "Tùy biến theo ý bạn",
+        "description": "Tùy chỉnh giao diện sáng/tối, màu chủ đạo và hình nền từ menu giao diện."
+      }
+    }
   },
   "titles": {
     "dashboard": "Bảng điều khiển",
