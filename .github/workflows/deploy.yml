@@ -34,13 +34,13 @@ jobs:
     steps:
       - name: Connect to Tailscale
         if: ${{ secrets.TAILSCALE_AUTHKEY != '' }}
-        uses: tailscale/github-action@v2
+        uses: tailscale/github-action@v4
         with:
           authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
           tags: tag:ci
 
       - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.2.0
+        uses: appleboy/ssh-action@v1.2.5
         with:
           host: ${{ secrets.SERVER_HOST || '100.101.27.107' }}
           username: ${{ secrets.SERVER_USER || 'sonun' }}
